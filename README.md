@@ -9,7 +9,7 @@ Each day has a python script and tests.
 To run a day and receive the answer run the following replacing X with the day number:
 
 ```
-python3 "Day X/solution.py"
+python3 "Day X/dayX.py"
 ```
 
 ## Tests
