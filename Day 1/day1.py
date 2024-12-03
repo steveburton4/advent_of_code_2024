@@ -29,7 +29,7 @@ def get_similarity(input_list_1, input_list_2):
     
     return total_similarity
 
-lists = read_inputs('input.csv')
+lists = read_inputs('Day 1/input.csv')
 diff = get_difference(lists[0], lists[1])
 similarity = get_similarity(lists[0], lists[1])
 
