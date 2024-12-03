@@ -21,7 +21,17 @@ def get_difference(input_list_1, input_list_2):
     
     return total_difference
 
+def get_similarity(input_list_1, input_list_2):
+    total_similarity = 0;
+    for check_int in input_list_1:
+        check_int_count = input_list_2.count(check_int)
+        total_similarity += (check_int * check_int_count)
+    
+    return total_similarity
+
 lists = read_inputs('input.csv')
 diff = get_difference(lists[0], lists[1])
+similarity = get_similarity(lists[0], lists[1])
 
-print ('Day 1 answer is: ' + str(diff))
+print ('Day 1 difference is: ' + str(diff))
+print ('Day 1 similarity is: ' + str(similarity))
