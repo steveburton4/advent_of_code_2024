@@ -7,7 +7,7 @@ Each day has a python script and tests.
 Dependencies can be installed by running the following.
 
 ```
-pip3 install -r requirements.txt
+make install_requirements
 ```
 
 ## Answers
@@ -15,7 +15,7 @@ pip3 install -r requirements.txt
 To run a day and receive the answer run the following replacing X with the day number:
 
 ```
-python3 "Day X/dayX.py"
+make get_answer day=X
 ```
 
 ## Tests
@@ -23,5 +23,11 @@ python3 "Day X/dayX.py"
 To run the tests run the following which will find and run all tests.
 
 ```
-pytest -v -s
+make run_tests
+```
+
+To run the tests for a specific day run the following, replacing X with the day number.
+
+```
+make run_tests_for_day day=X
 ```
