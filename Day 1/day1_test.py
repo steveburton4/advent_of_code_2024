@@ -8,7 +8,7 @@ def test_day_1_read_valid_input():
 def test_day_1_read_valid_input_unsorted():
     expected_lists = ([8,5,1],[2,5,100])
     lists = read_inputs('Day 1/test_input.csv')
-    assert not expected_lists != lists
+    assert expected_lists != lists
 
 def test_day_1_get_valid_difference():
     expected_difference = 5
