@@ -38,13 +38,14 @@ def get_total_of_mul_statements(list_of_statements_text):
         total += get_total_of_single_mul_statement(mul_statement)
     return total
 
-mul_statement_full_text = read_input('Day 3/input.txt')
+if __name__ == '__main__':
+    mul_statement_full_text = read_input('Day 3/input.txt')
 
-mul_statement_list = find_valid_mul_statements(mul_statement_full_text)
-mul_statement_total = get_total_of_mul_statements(mul_statement_list)
-print('Day 3 total of mul statements is: ' + str(mul_statement_total))
+    mul_statement_list = find_valid_mul_statements(mul_statement_full_text)
+    mul_statement_total = get_total_of_mul_statements(mul_statement_list)
+    print('Day 3 total of mul statements is: ' + str(mul_statement_total))
 
-mul_enabled_sections = find_all_enabled_sections(mul_statement_full_text)
-mul_statement_list = find_valid_mul_statements_from_list_text(mul_enabled_sections)
-mul_enabled_statement_total = get_total_of_mul_statements(mul_statement_list)
-print('Day 3 total of enabled mul statements is: ' + str(mul_enabled_statement_total))
+    mul_enabled_sections = find_all_enabled_sections(mul_statement_full_text)
+    mul_statement_list = find_valid_mul_statements_from_list_text(mul_enabled_sections)
+    mul_enabled_statement_total = get_total_of_mul_statements(mul_statement_list)
+    print('Day 3 total of enabled mul statements is: ' + str(mul_enabled_statement_total))

@@ -72,11 +72,12 @@ def fix_invalid_updates(invalid_updates_as_lists, page_ordering_rules_lists):
     
     return fixed_updates
 
-input = read_input('Day 5/input.txt')
-valid_updates = get_valid_and_invalid_updates_lists(input[1], input[0])
-valid_updates_middle_number_total = get_value_of_middle_pages(valid_updates[0])
-print('Day 5 total middle page numbers from valid updates is: ' + str(valid_updates_middle_number_total))
+if __name__ == '__main__':
+    input = read_input('Day 5/input.txt')
+    valid_updates = get_valid_and_invalid_updates_lists(input[1], input[0])
+    valid_updates_middle_number_total = get_value_of_middle_pages(valid_updates[0])
+    print('Day 5 total middle page numbers from valid updates is: ' + str(valid_updates_middle_number_total))
 
-fixed_updates = fix_invalid_updates(valid_updates[1], input[0])
-fixed_updates_middle_number_total = get_value_of_middle_pages(fixed_updates)
-print('Day 5 total middle page numbers from fixed updates is: ' + str(fixed_updates_middle_number_total))
+    fixed_updates = fix_invalid_updates(valid_updates[1], input[0])
+    fixed_updates_middle_number_total = get_value_of_middle_pages(fixed_updates)
+    print('Day 5 total middle page numbers from fixed updates is: ' + str(fixed_updates_middle_number_total))

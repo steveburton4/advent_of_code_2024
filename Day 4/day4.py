@@ -87,9 +87,10 @@ def find_xmas_instances(lines_to_check):
            find_xmas_instances_vertical(lines_to_check) + \
            find_xmas_instances_diagonal(lines_to_check)
 
-input_lines = read_input('Day 4/input.txt')
-total_instances = find_xmas_instances(input_lines)
-print('Day 4 total of xmas instances is: ' + str(total_instances))
+if __name__ == '__main__':
+    input_lines = read_input('Day 4/input.txt')
+    total_instances = find_xmas_instances(input_lines)
+    print('Day 4 total of xmas instances is: ' + str(total_instances))
 
-total_instances_x_mas = find_x_mas_instances(input_lines)
-print('Day 4 total of x-mas instances is: ' + str(total_instances_x_mas))
+    total_instances_x_mas = find_x_mas_instances(input_lines)
+    print('Day 4 total of x-mas instances is: ' + str(total_instances_x_mas))
