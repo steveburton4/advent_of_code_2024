@@ -59,6 +59,7 @@ def count_safe_rows(rows, allow_error):
 
     return safe_count
 
-input_rows = read_inputs('Day 2/input.csv')
-print('Day 2 safe row count is: ' + str(count_safe_rows(input_rows, False)))
-print('Day 2 safe row count with a skip is: ' + str(count_safe_rows(input_rows, True)))
+if __name__ == '__main__':
+    input_rows = read_inputs('Day 2/input.csv')
+    print('Day 2 safe row count is: ' + str(count_safe_rows(input_rows, False)))
+    print('Day 2 safe row count with a skip is: ' + str(count_safe_rows(input_rows, True)))
